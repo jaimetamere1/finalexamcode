@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(227, 198, 255);
+
+}
+
+nav {
+    background-color: rgb(199, 186, 255);
+    padding-top: 5px;
+    height: 45px;
+    margin: 0 auto;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    color: auto;
+    width: 30%;
+    padding: 5px;
+    text-align: center;
+    border: white 2px solid;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.banner {
+    width: 100%;
+    height: 600px;
+    background-image: url('images/banner.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    animation: rsmb 3s linear infinite alternate-reverse;
+}
+
+.banner div {
+    height: 100px;
+}
+
+.banner div p{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.rsmb {
+    width: 90%;
+    height: 250px;
+    background-color: azure;
+    margin: 0 auto;
+    background-size: cover;
+    animation: rsmb 20s linear infinite
+}
+
+@keyframes rsmb{
+    0% {
+        background-image: url(images/banner.jpeg);
+    }
+    50% {
+        background-image: url(images/banner2.jpg);
+    }
+    100% {
+        background-image: url(images/banner3.jpg);
+    }
+}
+
+.innerplanets {
+    background-color: white;
+    margin: 5px;
+}
+
+.innerplanets h3 {
+    font-size: 25px;
+    text-align: center;
+    color: darkblue;
+}
+
+.innerplanets p {
+    text-align: center;
+    color: rgb(0, 46, 106);
+}
+
+.card {
+    padding: 5px;
+    background-color: white;
+}
+
+.card{
+    margin: 5px;
+    padding: 20px;
+    width: 800px;
+    height: 245px;
+    border: 2px solid gray;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 300ms ease-out
+}
+
+.innerplanets .card img{
+    width: 250px;
+    height: 100%;
+    float: left;
+    border-radius: 15px;
+}
+
+.innerplanets .card .text ul{
+    padding-left: 25px;
+}
+
+.innerplanets .card .text h3  {
+    text-align: center;
+    color: darkblue;
+}
+
+.innerplanets .card:hover{
+    width: 850px;
+    height: 290px
+}
+
+.outerplanets h3 {
+    font-size: 25px;
+    text-align: center;
+    color: darkblue;
+}
+
+.outerplanets p {
+    text-align: center;
+    color: rgb(0, 46, 106);
+}
+
+.outerplanets table{
+    background-color: white;
+    margin: 0 auto
+}
+
+.outerplanets th{
+    background-color: brown;
+}
+
+tbody tr:nth-child(even){
+    background-color: rgb(113, 113, 255);
+}
+
+tbody tr:nth-child(even):hover{
+    background-color: rgb(210, 113, 255);
+}
+
+tbody tr:nth-child(odd){
+    background-color: rgb(173, 173, 255);
+}
+
+tbody tr:nth-child(odd):hover{
+    background-color: rgb(166, 88, 255);
+}
+
+.outerplanets table img{
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+}
+
+.outerplanets table td {
+    width: 30%;
+}
+
